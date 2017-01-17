@@ -1,0 +1,334 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Neutral (Default) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_NEUD)
+#ifdef _WIN32
+LANGUAGE LANG_NEUTRAL, SUBLANG_DEFAULT
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDM_TASKBARICON MENU DISCARDABLE 
+BEGIN
+    POPUP "TASKBARICON"
+    BEGIN
+        MENUITEM "&Show",                       IDM_SHOWINTERFACE
+        MENUITEM "&Options...",                 IDM_OPTIONSDLG
+        MENUITEM "&About",                      IDM_ABOUTBOX
+        MENUITEM SEPARATOR
+        MENUITEM "&Close",                      ID_APP_EXIT
+    END
+END
+
+#endif    // Neutral (Default) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 68
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About WindowHandlePicker"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,21,20
+    LTEXT           "WindowHandlePicker Version 1.0",IDC_STATIC,40,10,119,8,
+                    SS_NOPREFIX | NOT WS_GROUP
+    LTEXT           "Marquet Mike\nmike.marquet@altavista.net\n\nCopyright (C) 2000",
+                    IDC_STATIC,40,24,119,35,NOT WS_GROUP
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_WINDOWHANDLEPICKER_DIALOG DIALOGEX 0, 0, 169, 181
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Window Handle Picker"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDED_HANDLE,50,79,40,14
+    GROUPBOX        "Window Finder",IDC_STATIC,7,7,155,167
+    LTEXT           "Drag the Finder Tool over a window to select it, then release the mouse button. Or enter a window handle (in hexadecimal).",
+                    IDC_STATIC,13,19,147,25,NOT WS_GROUP
+    LTEXT           "Finder Tool :",IDC_STATIC,13,58,40,8,NOT WS_GROUP
+    CONTROL         135,IDPIC_WINDOWFINDER,"Static",SS_BITMAP,62,53,21,17
+    LTEXT           "H&andle :",IDC_STATIC,13,79,28,12,SS_CENTERIMAGE | NOT 
+                    WS_GROUP
+    LTEXT           "Caption :",IDC_STATIC,13,95,28,12,SS_CENTERIMAGE | NOT 
+                    WS_GROUP
+    LTEXT           "",IDST_CAPTION,50,95,105,12,SS_CENTERIMAGE | WS_BORDER | 
+                    NOT WS_GROUP
+    LTEXT           "Class :",IDC_STATIC,14,109,28,12,SS_CENTERIMAGE | NOT 
+                    WS_GROUP
+    LTEXT           "",IDST_CLASS,50,109,105,12,SS_CENTERIMAGE | WS_BORDER | 
+                    NOT WS_GROUP
+    LTEXT           "Style :",IDC_STATIC,13,123,28,12,SS_CENTERIMAGE | NOT 
+                    WS_GROUP
+    LTEXT           "",IDST_STYLE,50,123,105,12,SS_CENTERIMAGE | WS_BORDER | 
+                    NOT WS_GROUP
+    LTEXT           "ExStyle :",IDC_STATIC,13,137,28,12,SS_CENTERIMAGE | NOT 
+                    WS_GROUP
+    LTEXT           "",IDST_EXSTYLE,50,137,105,12,SS_CENTERIMAGE | WS_BORDER | 
+                    NOT WS_GROUP
+    LTEXT           "Rect :",IDC_STATIC,13,152,28,12,SS_CENTERIMAGE | NOT 
+                    WS_GROUP
+    LTEXT           "",IDST_RECT,50,152,105,12,SS_CENTERIMAGE | WS_BORDER | 
+                    NOT WS_GROUP
+    LTEXT           "ID :",IDC_STATIC,98,79,15,14,SS_CENTERIMAGE | NOT 
+                    WS_GROUP
+    CTEXT           "",IDST_ID,115,79,40,14,SS_CENTERIMAGE | WS_BORDER | NOT 
+                    WS_GROUP
+    CONTROL         "Always on top",IDCB_ALWAYSONTOP,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,99,56,60,10
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "WindowHandlePicker MFC Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "WindowHandlePicker\0"
+            VALUE "LegalCopyright", "Copyright (C) 2000\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "WindowHandlePicker.EXE\0"
+            VALUE "ProductName", "WindowHandlePicker Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 61
+    END
+
+    IDD_WINDOWHANDLEPICKER_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 162
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 174
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About WindowHandlePicker..."
+    IDS_OPTIONS             "&Options"
+    IDS_REGISTRYERROR       "Failed to create registry keys !"
+    IDS_APPLICATIONNAME     "Window Handle Picker"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// French (Belgium) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FRB)
+#ifdef _WIN32
+LANGUAGE LANG_FRENCH, SUBLANG_FRENCH_BELGIAN
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\WindowHandlePicker.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\WindowHandlePicker.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_OPTIONSDLG DIALOG DISCARDABLE  0, 0, 186, 95
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Options"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,129,74,50,14
+    CONTROL         "Place in system tray on startup",IDCB_STARTTRAYICON,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,7,111,10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_OPTIONSDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_WINDOWFINDER        CURSOR  DISCARDABLE     "res\\WindowFinder.Cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_WINDOWFINDER2       BITMAP  DISCARDABLE     "res\\WindowFinder2_16colors.bmp"
+IDB_WINDOWFINDER1       BITMAP  DISCARDABLE     "res\\WindowFinder1_16colors.bmp"
+#endif    // French (Belgium) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\WindowHandlePicker.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
